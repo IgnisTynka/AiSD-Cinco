@@ -16,7 +16,7 @@ void dynamic(std::vector<product> products, int backPackWeight){
     }
 
     int res = K[n][backPackWeight];
-    std::cout << "Wartość plecaka: " << res << std::endl;
+    std::cout << "Wartosc plecaka: " << res << std::endl;
     std::cout << "Zabrane artefakty: " << std::endl;
     int w = backPackWeight;
     for(int i = n; i > 0 && res > 0; i--){

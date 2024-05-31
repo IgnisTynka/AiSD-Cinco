@@ -23,10 +23,10 @@ void greedyWeight(std::vector<product> products, int backPackWeight){
         i++;
     }
     
-    std::cout << "Wartość plecaka: " << backpackValue << std::endl;
+    std::cout << "Wartosc plecaka: " << backpackValue << std::endl;
     std::cout << "Zabrane artefakty: " << std::endl;
-    for(int i = 0; i < result.size(); i++){
-        std::cout << "\t - " << result[i].name << std::endl;
+    for(product p : result){
+        std::cout << "\t - " << p.name << std::endl;
     }
 
 }
