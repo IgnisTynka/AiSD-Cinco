@@ -5,7 +5,7 @@
 void greedyPrice(std::vector<product> products, int backPackWeight){
     std::vector<product> result;
 
-    //sort by weight
+    //sort by price
     std::sort(products.begin(), products.end(), [](product a, product b){
         return a.price > b.price;
     });
