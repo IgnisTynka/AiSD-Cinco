@@ -56,7 +56,7 @@ int main() {
     }
 
     //products price and weight to file
-    std::fstream file("products.txt", std::ios::out);
+    std::fstream file("data/products.txt", std::ios::out);
 
     if(file.is_open()){
         file << backPackWeight << std::endl;
@@ -67,7 +67,7 @@ int main() {
         file.close();
     }
 
-    printf("\n\t\t\t\t\033[34m -=-=-=-=-=-=-=-=-=-=-=-=-=  PRÓBY ROZWIĄZANIA =-=-=-=-=-=-=-=-=-=-=-=-=-\033[0m\n\n");
+    printf("\n\t\t\t\t\033[34m -=-=-=-=-=-=-=-=-=-=-=-=-=  PROBY ROZWIAZANIA =-=-=-=-=-=-=-=-=-=-=-=-=-\033[0m\n\n");
     
     std:: cout << "Próba 1. Algorytm zachlanny sortowanie po wadze:" << std::endl;
     greedyWeight(products, backPackWeight);
